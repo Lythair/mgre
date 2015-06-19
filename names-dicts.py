@@ -1,5 +1,5 @@
 #dicts
-names_dict = {
+'''names_dict = {
   'garnet': ['female', 'other'],
   'amethyst': ['female'],
   'pearl': ['female'],
@@ -14,12 +14,18 @@ names_dict = {
   'lee': ['male', 'female', 'other'],
   'alistair': ['male', 'other'],
   'loweer': ['unicorn']
-}
+}'''
 tumblrs = {
   'male': ['femfreq.tumblr.com', 'the-daily-feminist.tumblr.com', 'carolrossettidesign.tumblr.com', 'fuck-yeah-feminist.tumblr.com', 'plannedparenthood.tumblr.com'],
   'female': ['femfreq.tumblr.com', 'plannedparenthood.tumblr.com', 'whoneedsfeminism.tumblr.com', 'lacigreen.tumblr.com', 'bitchsandwich.tumblr.com'],
   'unicorn': ['theunicornverse.tumblr.com', 'drawingunicorns.tumblr.com']
 }
+
+import json
+with open('names_dictionary.json') as data_file:    
+    names_dict = json.load(data_file)
+
+
 #loops
 name_input = raw_input('What is your name? ').lower()
 print name_input
@@ -44,7 +50,10 @@ for key in names_dict :
 if x  == False :
   ask = raw_input("We're sorry, your name doesn't appear to be in our dictionary. Would you like to add it? ").lower()
   #g = raw_input('We couldn\'t find you. What is your gender?')
-  names[name] = [g]
+  if ask == 'yes':
+    names_dict[name_input] = []
+    truth = raw_input('What is your gender? ').lower()
+    names_dict[name_input].append(truth)
 else :
   print truth + ' tumblrs :'
   for gender_key in tumblrs :
@@ -52,3 +61,5 @@ else :
       for tumblr_url in tumblrs[gender_key] :
         print tumblr_url
 
+with open('names_dictionary.json', 'w') as outfile:
+    json.dump(names_dict, outfile)
