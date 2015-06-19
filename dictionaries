@@ -1,20 +1,20 @@
 names = {
-  garnet = ['female', 'other'],
-  amethyst = ['female'],
-  pearl = ['female'],
-  steven = ['male'],
-  stevonnie = ['other']
-  leliana = ['female'],
-  amelia = ['male'],
-  sarah = ['male'],
-  hank = ['female'],
-  john = ['female'],
-  alex = ['male, 'female', 'other'],
-  lee = ['male', 'female', 'other'],
-  alistair = ['male', 'other']
+  'garnet': ['female', 'other'],
+  'amethyst': ['female'],
+  'pearl': ['female'],
+  'steven': ['male'],
+  'stevonnie': ['other'],
+  'leliana': ['female'],
+  'amelia': ['male'],
+  'sarah': ['male'],
+  'hank': ['female'],
+  'john': ['female'],
+  'alex': ['male', 'female', 'other'],
+  'lee': ['male', 'female', 'other'],
+  'alistair': ['male', 'other']
 }
 tumblrs = {
-  male = ['femfreq.tumblr.com', 'the-daily-feminist.tumblr.com', 'carolrossettidesign.tumblr.com', 'fuck-yeah-feminist.tumblr.com', 'plannedparenthood.tumblr.com']
-  female = ['femfreq.tumblr.com', 'plannedparenthood.tumblr.com', 'whoneedsfeminism.tumblr.com', 'lacigreen.tumblr.com', 'bitchsandwich.tumblr.com']
-  unicorn = ['theunicornverse.tumblr.com', 'drawingunicorns.tumblr.com']
+  'male': ['femfreq.tumblr.com', 'the-daily-feminist.tumblr.com', 'carolrossettidesign.tumblr.com', 'fuck-yeah-feminist.tumblr.com', 'plannedparenthood.tumblr.com'],
+  'female': ['femfreq.tumblr.com', 'plannedparenthood.tumblr.com', 'whoneedsfeminism.tumblr.com', 'lacigreen.tumblr.com', 'bitchsandwich.tumblr.com'],
+  'unicorn': ['theunicornverse.tumblr.com', 'drawingunicorns.tumblr.com']
 }
