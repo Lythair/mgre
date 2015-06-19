@@ -18,3 +18,10 @@ tumblrs = {
   'female': ['femfreq.tumblr.com', 'plannedparenthood.tumblr.com', 'whoneedsfeminism.tumblr.com', 'lacigreen.tumblr.com', 'bitchsandwich.tumblr.com'],
   'unicorn': ['theunicornverse.tumblr.com', 'drawingunicorns.tumblr.com']
 }
+name = raw_input('What is your name?').lower()
+for key in names :
+  if key == name :
+    print name + ' could be :'
+    for thing in names[key] :
+      print thing
+    break
